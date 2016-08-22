@@ -1,0 +1,25 @@
+<!doctype html>
+<html ng-app>
+<head>
+    <script src="../../js/angular.js"></script>
+    <script src="../../js/scope/scope1.js"></script>
+    <style>
+/*        .doc-example-live .ng-scope {
+            border: 1px dashed red;
+        }*/
+    </style>
+</head>
+<body>
+<div ng-controller="EmployeeController">
+    Manager: {{employee.name}} [ {{department}} ]<br>
+    Reports:
+    <ul>
+        <li ng-repeat="employee in employee.reports">
+            {{employee.name}} [ {{department}} ]
+        </li>
+    </ul>
+    <hr>
+    {{greeting}}
+</div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!doctype html>
+<html ng-app>
+<head>
+    <script src="../../js/angular.js"></script>
+    <script src="../../js/scope/scope.js"></script>
+</head>
+<body>
+<div ng-controller="MyController">
+    Your name:
+    <input type="text" ng-model="username">
+    <button ng-click='sayHello()'>greet</button>
+    <hr>
+    {{greeting}}
+</div>
+</body>
+</html>

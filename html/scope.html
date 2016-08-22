@@ -1,0 +1,23 @@
+<!doctype html>
+<html ng-app>
+<head>
+    <script src="../js/angular.js"></script>
+    <script src="../js/scope.js"></script>
+</head>
+<body>
+<div ng-controller="GreetCtrl">
+    Hello {{name}}!
+</div>
+<div ng-controller="ListCtrl">
+    <ol>
+        <li ng-repeat="name in names">{{name}}</li>
+    </ol>
+</div>
+<div ng-controller="MyCtrl">
+    Hello {{name}}!
+    <button ng-click="action()">
+        OK
+    </button>
+</div>
+</body>
+</html>

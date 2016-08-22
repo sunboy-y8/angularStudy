@@ -1,0 +1,20 @@
+<!doctype html>
+<html ng-app>
+<head>
+    <script src="../../js/angular.js"></script>
+    <script src="../../js/expression/expression1.js"></script>
+</head>
+<body>
+<div ng-controller="Cntl2" class="expressions">
+    Expression:
+    <input type='text' ng-model="expr" size="10"/>
+    <button ng-click="addExp(expr)">Evaluate</button>
+    <ul>
+        <li ng-repeat="expr in exprs">
+            [ <a href="" ng-click="removeExp($index)">X</a> ]
+            <tt>{{expr}}</tt> => <span ng-bind="$parent.$eval(expr)"></span>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
